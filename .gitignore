@@ -1,0 +1,17 @@
+# Ignore the virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Log files
+*.log
+
+# Ignore environment and dependency files
+.env
+.DS_Store
+
+# Ignore deployment files that might be auto-generated
+*.swp
