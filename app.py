@@ -17,7 +17,7 @@ def calculate_sum():
     try:
         num1 = float(data['num1'])
         num2 = float(data['num2'])
-        result = num1 + num2
+        result = num1 + num2 + 2
         return jsonify({'sum': result})
     except ValueError:
         return jsonify({'error': 'Invalid input, numbers expected'}), 400
