@@ -1,8 +1,12 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
+
+@app.route('/')
+def home():
+    return render_template('index.html', title="Welcome", message="Hello, Flask with Jinja!")
 
 @app.route('/hello2', methods=['GET'])
 def hello_world2():
